@@ -1,7 +1,10 @@
 .attribution{
   display: none;
 }
-
+*:focus {
+ outline: 2px dotted #ff7500;
+ outline-offset: 3px;
+}
 .container {
   width: 100%;
   max-width: 1440px;
@@ -15,7 +18,7 @@
 }
 .result-box {
   width: 346px;
-  height: 550px;
+  height: 574px;
   margin-top: 160px;
   text-align: center;
   border-radius: 20px;
@@ -28,33 +31,55 @@
   margin-bottom: 30px;
 }
 .profile-name {
-  font-size: 20px;
+  font-size: 17px;
   margin: 0;
   margin-bottom: 16px;
 }
 .location {
-  font-size: 14px;
+  font-size: 15px;
   margin: 0;
   margin-bottom: 30px;
+  color: #a9c45f;
 }
 .occupation {
   font-size: 14px;
+  color: #aeaeae;
   margin: 0;
   margin-bottom: 25px;
 }
-.socials {
-
+.socials{
+  margin: 0;
+}
+.socials li a{
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .socials li{
   width: 275px;
   height: 40px;
   list-style: none;
   background-color: #333333;
-  color: #fff;
   margin-bottom: 16px;
   border-radius: 10px;
+  cursor: pointer;
 }
-
+.socials li a:hover{
+  color: #000;
+}
+.socials li:hover{
+  opacity: 0.8;
+  background-color: #c4f82a;
+}
+.socials li:active{
+  background-color: #c4f82a;
+}
 
 /* font-face */
 
